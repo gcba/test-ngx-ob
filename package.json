@@ -55,5 +55,20 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      [
+        "@semantic-release/npm",
+        {
+          "pkgRoot": "dist/test-ngx-ob"
+        }
+      ],
+      "@semantic-release/github",
+      "@semantic-release/git"
+    ]
   }
 }
