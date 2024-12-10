@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "obelisco-angular": {
+    "test-ngx-ob-front": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/obelisco-angular",
+            "outputPath": "dist/test-ngx-ob-front",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -61,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "obelisco-angular:build:production"
+              "buildTarget": "test-ngx-ob-front:build:production"
             },
             "development": {
-              "buildTarget": "obelisco-angular:build:development"
+              "buildTarget": "test-ngx-ob-front:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "obelisco-angular:build"
+            "buildTarget": "test-ngx-ob-front:build"
           }
         },
         "test": {
@@ -89,7 +89,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "/obelisco-angular/"
+            "baseHref": "/test-ngx-ob-front/"
           }
         }
       }
