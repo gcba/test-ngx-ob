@@ -28,7 +28,7 @@
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "projects/obelisco-angular-lib/scss/obelisco.scss",
+              "projects/test-ngx-ob/scss/obelisco.scss",
               "src/styles.scss"
             ],
             "scripts": []
@@ -94,7 +94,7 @@
         }
       }
     },
-    "obelisco-angular-lib": {
+    "test-ngx-ob": {
       "projectType": "library",
       "schematics": {
         "@schematics/angular:component": {
@@ -104,21 +104,21 @@
           "strict": true
         }
       },
-      "root": "projects/obelisco-angular-lib",
-      "sourceRoot": "projects/obelisco-angular-lib",
+      "root": "projects/test-ngx-ob",
+      "sourceRoot": "projects/test-ngx-ob",
       "prefix": "o",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/obelisco-angular-lib/ng-package.json"
+            "project": "projects/test-ngx-ob/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/obelisco-angular-lib/tsconfig.lib.prod.json"
+              "tsConfig": "projects/test-ngx-ob/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/obelisco-angular-lib/tsconfig.lib.json"
+              "tsConfig": "projects/test-ngx-ob/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -126,11 +126,14 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/obelisco-angular-lib/tsconfig.spec.json",
+            "tsConfig": "projects/test-ngx-ob/tsconfig.spec.json",
             "polyfills": ["zone.js", "zone.js/testing"]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

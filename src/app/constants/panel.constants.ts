@@ -2,7 +2,7 @@ import {
   DataSource,
   MediaSizes,
   MediaPanel,
-} from 'projects/obelisco-angular-lib/core/models';
+} from 'projects/test-ngx-ob/core/models';
 
 export const PANEL_NAVIGATION = [
   {

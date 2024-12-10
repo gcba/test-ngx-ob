@@ -1,10 +1,10 @@
-import { DataSource } from 'projects/obelisco-angular-lib/core/models';
+import { DataSource } from 'projects/test-ngx-ob/core/models';
 
 import {
   MediaIframe,
   MediaVideo,
   MediaImage,
-} from 'projects/obelisco-angular-lib/core/models';
+} from 'projects/test-ngx-ob/core/models';
 
 export const HIGHLIGHTED_NAVIGATION = [
   {

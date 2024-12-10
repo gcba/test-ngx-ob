@@ -1,7 +1,7 @@
-import { Step } from 'projects/obelisco-angular-lib/core/models';
+import { Step } from 'projects/test-ngx-ob/core/models';
 
 import { codeFormattingArrayList } from '../core/helpers/codeFormatting.helper';
-import { DataSource } from 'projects/obelisco-angular-lib/core/models';
+import { DataSource } from 'projects/test-ngx-ob/core/models';
 
 const formattedExampleTsCode = (code: any) => `
 import { Component  } from '@angular/core';

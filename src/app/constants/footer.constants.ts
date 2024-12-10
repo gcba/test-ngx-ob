@@ -1,4 +1,4 @@
-import { CustomContent, DataSource } from 'projects/obelisco-angular-lib/core/models';
+import { CustomContent, DataSource } from 'projects/test-ngx-ob/core/models';
 import { codeFormattingArrayList } from '../core/helpers/codeFormatting.helper';
 
 const formattedExampleTsCodeAll = (array1: any, array2: any, array3: any) => `

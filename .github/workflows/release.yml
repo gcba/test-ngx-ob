@@ -2,7 +2,7 @@ name: Release
 on:
   push:
     branches:
-      - master
+      - main
 
 permissions:
   contents: write
@@ -24,11 +24,11 @@ jobs:
         run: npm ci
 
       - name: Build Angular library
-        run: npm run build obelisco-angular-lib
+        run: npm run build test-ngx-ob
 
       - name: Pack the library
         run: |
-          cd dist/obelisco-angular-lib
+          cd dist/test-ngx-ob
           npm pack
 
       - name: Set up npm authentication
@@ -42,7 +42,7 @@ jobs:
 
       - name: Publish to NPM
         run: |
-          cd dist/obelisco-angular-lib
+          cd dist/test-ngx-ob
           npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { OFooterModule } from 'projects/obelisco-angular-lib/footer';
-import { ONavModule } from 'projects/obelisco-angular-lib/nav';
-import { OTableModule } from 'projects/obelisco-angular-lib/table';
+import { OFooterModule } from 'projects/test-ngx-ob/footer';
+import { ONavModule } from 'projects/test-ngx-ob/nav';
+import { OTableModule } from 'projects/test-ngx-ob/table';
 import { ViewerComponent } from 'src/app/components/viewer/viewer.component';
 import { ClipboardDirective } from 'src/app/shared/directives/copy/clipboard.directive';
 

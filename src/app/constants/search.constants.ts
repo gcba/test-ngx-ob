@@ -1,4 +1,4 @@
-import { DataSource } from 'projects/obelisco-angular-lib/core/models';
+import { DataSource } from 'projects/test-ngx-ob/core/models';
 
 //Routes
 export const SEARCH_NAVIGATION = [

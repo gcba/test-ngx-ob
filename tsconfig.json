@@ -13,12 +13,12 @@
     "skipLibCheck": true,
     "paths": {
       // "ngx-obelisco": ["./dist/ngx-obelisco"]
-      "obelisco-angular-lib": ["projects/obelisco-angular-lib/index.ts"],
-      "obelisco-angular-lib/*": ["projects/obelisco-angular-lib/*"],
+      "test-ngx-ob": ["projects/test-ngx-ob/index.ts"],
+      "test-ngx-ob/*": ["projects/test-ngx-ob/*"],
       "include": [
         // "projects/obelisco-angular/core/*.ts",
         // "projects/obelisco-angular/access/*.ts",
-        "projects/obelisco-angular-lib/*.ts" 
+        "projects/test-ngx-ob/*.ts" 
       ],
       "exclude": [
         "node_modules",

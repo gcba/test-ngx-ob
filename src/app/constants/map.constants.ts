@@ -1,6 +1,6 @@
-import { DataSource } from 'projects/obelisco-angular-lib/core/models';
+import { DataSource } from 'projects/test-ngx-ob/core/models';
 
-import { MediaIframe } from 'projects/obelisco-angular-lib/core/models';
+import { MediaIframe } from 'projects/test-ngx-ob/core/models';
 
 export const MAP_NAVIGATION = [
   {

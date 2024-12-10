@@ -1,4 +1,4 @@
-import { DataSource, TabsProps } from 'projects/obelisco-angular-lib/core/models';
+import { DataSource, TabsProps } from 'projects/test-ngx-ob/core/models';
 import { ExampleTabsOneComponent } from '../modules/section-components/navigation/tabs/pages/navigation-tabs-examples/routes-tabs/example-tabs-one/example-tabs-one.component';
 import { ExampleTabsTwoComponent } from '../modules/section-components/navigation/tabs/pages/navigation-tabs-examples/routes-tabs/example-tabs-two/example-tabs-two.component';
 import { ExampleTabsThreeComponent } from '../modules/section-components/navigation/tabs/pages/navigation-tabs-examples/routes-tabs/example-tabs-three/example-tabs-three.component';

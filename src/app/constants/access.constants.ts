@@ -1,4 +1,4 @@
-import { AccessList, DataSource } from 'projects/obelisco-angular-lib/core/models';
+import { AccessList, DataSource } from 'projects/test-ngx-ob/core/models';
 
 //Routes
 const ACCESS_ROUTE = 'access';
