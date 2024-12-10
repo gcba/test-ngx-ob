@@ -1,6 +1,6 @@
 {
   "name": "obelisco-angular",
-  "version": "1.2.3",
+  "version": "0.0.0-development",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
