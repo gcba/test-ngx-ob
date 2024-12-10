@@ -1,0 +1,8 @@
+<nav class="tabs-box" aria-label="Navegación por pestañas">
+  <ul class="nav nav-pills tabs" id="simple-myTab" role="tablist">
+    <li class="nav-item" role="presentation" *ngFor="let route of routes">
+      <a [routerLink]="route.route" routerLinkActive="active" class="nav-link" role="tab">{{ route.title }}</a>
+    </li>
+  </ul>
+</nav>
+<hr style="margin-top: -4px; background-color: #E6EBF0;">

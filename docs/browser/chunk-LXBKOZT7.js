@@ -1,0 +1,1 @@
+import{F as c,G as o,s as r}from"./chunk-LDCFWZ36.js";var n=(()=>{let t=class t{constructor(i){this.template=i}};t.\u0275fac=function(s){return new(s||t)(c(o))},t.\u0275dir=r({type:t,selectors:[["","oCustomContent",""]],standalone:!0});let e=t;return e})();export{n as a};

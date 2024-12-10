@@ -1,0 +1,29 @@
+{
+  "name": "obelisco-angular-lib",
+  "version": "1.2.3",
+  "peerDependencies": {
+    "@angular/common": "^17.3.0",
+    "@angular/core": "^17.3.0",
+    "@ngneat/helipopper": "^8.0.3"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "description": "Componentes funcionales y reutilizables para Angular.",
+  "author": "Dirección General de Experiencia Digital",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gcba/obelisco-angular/"
+  },
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "gcba",
+    "obelisco",
+    "components",
+    "design",
+    "ui"
+  ]
+}

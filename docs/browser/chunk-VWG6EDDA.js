@@ -1,0 +1,236 @@
+import{a as d}from"./chunk-S2DW6XOG.js";import{E as n,N as l,Pa as r,S as o,T as c,U as a,q as s}from"./chunk-LDCFWZ36.js";var p=[{title:"Api",route:"/components/highlighted/api"},{title:"Ejemplos",route:"/components/highlighted/examples"}],u="T\xEDtulo de destacado",m="Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas l\xEDneas. No puede contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas l\xEDneas. No puede contener negritas ni enlaces",b="Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas l\xEDneas. No puede contener negritas ni enlaces.",I={src:"https://gcba.github.io/Obelisco/panel/destacado.jpeg",alt:"descripci\xF3n de imagen"},E={src:"https://gcba.github.io/Obelisco/panel/videoBuenosAires.mp4",title:"Buenos Aires se escribe en plural",track:"assets/panel/videoBuenosAires.vtt"},H={src:"https://www.youtube.com/embed/sXE613Oaxvc?si=iWSX1erqQxXOLojw",title:"Buenos Aires se escribe en plural"},x=[{name:{data:"@Input() <br/> type: HighlightedType",customClasses:""},description:{data:"Se utiliza para establecer el tipo de destacado. Por defecto es banner.",customClasses:""}},{name:{data:"@Input() <br/> title: string",customClasses:""},description:{data:"Establece el t\xEDtulo del destacado.",customClasses:""}},{name:{data:"@Input() <br/> description: string",customClasses:""},description:{data:"Define el contenido de texto principal del destacado.",customClasses:""}},{name:{data:"@Input() <br/> image: MediaImage"},description:{data:"Define la imagen principal del destacado."}},{name:{data:"@Input() <br/> video: MediaVideo"},description:{data:"Define el video principal del destacado."}},{name:{data:"@Input() <br/> iframe: MediaIframe"},description:{data:"Define el iframe principal del destacado."}},{name:{data:"@Input() <br/> isBgLight: boolean",customClasses:""},description:{data:"Propiedad de entrada para indicar si el fondo del destacado es claro. Por defecto es false.",customClasses:""}},{name:{data:"@Input() <br /> customClasses: string",customClasses:""},description:{data:"Se utiliza para aplicar clases personalizadas al componente para personalizar su apariencia.",customClasses:""}}],D=`
+  type HighlightedType = 'banner' | 'grouping' | 'lateral';
+`,f=`
+interface Media {
+  src: string;
+}
+
+interface MediaImage extends Media {
+  alt: string;
+}
+`,T=`
+interface Media {
+  src: string;
+}
+
+interface MediaVideo extends Media {
+  track: string;
+  title: string;
+}
+`,_=`
+interface Media {
+  src: string;
+}
+  
+interface MediaIframe extends Media {
+  title: string;
+}
+`,G=[{name:{data:"src: string"},description:{data:"Se utiliza para definir la url del elemento multimedia."}},{name:{data:"alt: string"},description:{data:"Se utiliza para definir el texto alternativo de la imagen."}}],v=[{name:{data:"src: string"},description:{data:"Se utiliza para definir la url del elemento multimedia."}},{name:{data:"track: string"},description:{data:"Se utiliza para definir la ruta al elemento con formato WebVTT (archivos .vtt)."}},{name:{data:"title: string"},description:{data:"Se utiliza para definir el t\xEDtulo del video."}}],A=[{name:{data:"src: string"},description:{data:"Se utiliza para definir la url del elemento multimedia."}},{name:{data:"title: string"},description:{data:"Se utiliza para definir el t\xEDtulo del iframe."}}],C=[{name:{data:"o-highlighted-header",customClasses:"font-italic"},description:{data:"Secci\xF3n anclada a la parte superior del componente.",customClasses:""}},{name:{data:"o-highlighted-title",customClasses:"font-italic"},description:{data:"Se utiliza dentro de o-highlighted-header, para establecer el t\xEDtulo del componente.",customClasses:""}},{name:{data:"o-highlighted-content",customClasses:"font-italic"},description:{data:"Se utiliza para establecer el contenido del componente.",customClasses:""}},{name:{data:"o-highlighted-description",customClasses:"font-italic"},description:{data:"Se utiliza dentro de o-highlighted-content, para establecer el texto descriptivo del componente.",customClasses:""}},{name:{data:"o-highlighted-image",customClasses:"font-italic"},description:{data:"Se utiliza para establecer la imagen del componente.",customClasses:""}},{name:{data:"o-highlighted-video",customClasses:"font-italic"},description:{data:"Se utiliza para establecer el video del componente.",customClasses:""}},{name:{data:"o-highlighted-footer",customClasses:"font-italic"},description:{data:"Secci\xF3n anclada a la parte inferior del componente que contiene accionables.",customClasses:""}}],y=`
+<o-highlighted>
+  <o-highlighted-image [image]="picture"></o-highlighted-image>
+  <o-highlighted-header>
+    <o-highlighted-title>T\xEDtulo de destacado</o-highlighted-title>
+  </o-highlighted-header>
+  <o-highlighted-content>
+    <o-highlighted-description>
+      Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas l\xEDneas. No puede contener negritas ni
+      enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas l\xEDneas. No puede contener
+      negritas ni enlaces</o-highlighted-description>
+  </o-highlighted-content>
+  <o-highlighted-footer>
+    <o-button link="#" size="lg">Bot\xF3n</o-button>
+    <o-button link="#" size="lg" type="secondary">Bot\xF3n</o-button>
+  </o-highlighted-footer>
+</o-highlighted>
+`,M=`
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-example',
+  template: './app-example.component.html',
+})
+export class ExampleComponent {
+  public picture: MediaImage = {
+    src: 'https://gcba.github.io/Obelisco/panel/destacado.jpeg',
+    alt: 'descripci\xF3n de imagen'
+  };
+}
+`,S=`
+<o-highlighted type="grouping">
+  <o-highlighted-video [video]="video"></o-highlighted-video>
+  <o-highlighted-header>
+    <o-highlighted-title>T\xEDtulo de destacado</o-highlighted-title>
+  </o-highlighted-header>
+  <o-highlighted-content>
+    <o-highlighted-description>Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas l\xEDneas. No puede contener negritas
+      ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas l\xEDneas. No puede
+      contener negritas ni enlaces</o-highlighted-description>
+  </o-highlighted-content>
+  <o-highlighted-footer>
+    <a class="external" href="#" target="_blank">Enlace externo</a>
+  </o-highlighted-footer>
+</o-highlighted>
+`,N=`
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-example',
+  template: './app-example.component.html',
+})
+export class ExampleComponent {
+  public video: MediaVideo = {
+    src: 'https://gcba.github.io/Obelisco/panel/videoBuenosAires.mp4',
+    title: 'Buenos Aires se escribe en plural',
+    track: 'https://gcba.github.io/Obelisco/panel/videoBuenosAires.vtt'
+  };
+`,L=`
+<o-highlighted 
+  [title]="title" 
+  [description]="description" 
+  [image]="picture">
+  <o-button #children link="#" size="lg">Bot\xF3n</o-button>
+  <o-button #children link="#" size="lg" type="secondary">Bot\xF3n</o-button>
+</o-highlighted>
+`,O=`
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-example',
+  template: './app-example.component.html',
+})
+export class ExampleComponent {
+  public title: string = 'T\xEDtulo de destacado';
+
+  public description: string = 'Este es el cuerpo de un destacado. Debe ser breve y conciso, 
+  de pocas l\xEDneas. No puede contener negritas ni enlaces. Este es el cuerpo de un destacado. 
+  Debe ser breve y conciso, de pocas l\xEDneas. No puede contener negritas ni enlaces';
+
+  public picture: MediaImage = {
+    src: 'https://gcba.github.io/Obelisco/panel/destacado.jpeg',
+    alt: 'descripci\xF3n de imagen'
+  };
+}
+`,z=`
+<o-highlighted 
+  [title]="title"
+  [description]="description"
+  [video]="video">
+  <o-button #children link="#" size="lg">Bot\xF3n</o-button>
+</o-highlighted>
+
+<o-highlighted
+  [title]="title"
+  [description]="description"
+  [iframe]="iframe">
+  <a #children class="external" href="#" target="_blank">Enlace externo</a>
+</o-highlighted>
+`,B=`
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-example',
+  template: './app-example.component.html',
+})
+export class ExampleComponent {
+  public title: string = 'T\xEDtulo de destacado';
+
+  public description: string = 'Este es el cuerpo de un destacado. Debe ser breve y conciso, 
+  de pocas l\xEDneas. No puede contener negritas ni enlaces. Este es el cuerpo de un destacado. 
+  Debe ser breve y conciso, de pocas l\xEDneas. No puede contener negritas ni enlaces';
+
+  public video: MediaVideo = {
+    src: 'https://gcba.github.io/Obelisco/panel/videoBuenosAires.mp4',
+    title: 'Buenos Aires se escribe en plural',
+    track: 'https://gcba.github.io/Obelisco/panel/videoBuenosAires.vtt'
+  };
+
+  public iframe: MediaIframe = {
+    src: 'https://www.youtube.com/embed/sXE613Oaxvc?si=iWSX1erqQxXOLojw',
+    title: 'Buenos Aires se escribe en plural'
+  };
+}
+`,k=`
+<o-highlighted [title]="title" [description]="description">
+  <o-button #children size="lg" type="secondary" link="#" download="">
+    <span class="material-symbols-rounded o-icon" aria-hidden="true">file_download</span>
+    Descargar
+  </o-button>
+</o-highlighted>
+`,R=`
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-example',
+  template: './app-example.component.html',
+})
+export class ExampleComponent {
+  public title: string = 'T\xEDtulo de destacado';
+
+  public description: string = 'Este es el cuerpo de un destacado. Debe ser breve y conciso, 
+  de pocas l\xEDneas. No puede contener negritas ni enlaces. Este es el cuerpo de un destacado. 
+  Debe ser breve y conciso, de pocas l\xEDneas. No puede contener negritas ni enlaces';
+}
+`,w=`
+<o-highlighted 
+  [title]="title" 
+  [description]="description" 
+  [image]="picture" 
+  [isBgLight]="true">
+  <o-access #children title="Acceso" icon="bx bxs-info-circle" route="/home" size="sm"></o-access>
+</o-highlighted>
+`,V=`
+<div class="container">
+  <div class="card-deck max-cards-2">
+    <o-highlighted type="grouping" [title]="title" [description]="description" [image]="picture">
+      <o-button #children link="#" size="lg">Bot\xF3n</o-button>
+    </o-highlighted>
+    <o-highlighted type="grouping" [title]="title" [description]="description" [image]="picture">
+      <o-button #children size="lg" type="secondary" link="#" download="">
+        <span class="material-symbols-rounded o-icon" aria-hidden="true">file_download</span>
+        Descargar
+      </o-button>
+    </o-highlighted>
+  </div>
+</div>
+`,P=`
+<div class="container">
+  <div class="card-deck max-cards-2">
+    <o-highlighted type="grouping" [title]="title" [description]="description" [video]="video">
+      <a #children class="external" href="#" target="_blank">Enlace externo</a>
+    </o-highlighted>
+    <o-highlighted type="grouping" [title]="title" [description]="description" [iframe]="iframe">
+      <a #children class="external" href="#" target="_blank">Enlace externo</a>
+    </o-highlighted>
+  </div>
+</div>
+`,U=`
+<div class="container">
+  <div class="card-deck max-cards-2">
+    <o-highlighted type="grouping" [title]="title" [description]="description">
+      <o-access #children title="Acceso" icon="bx bxs-info-circle" route="/home" size="sm"></o-access>
+    </o-highlighted>
+    <o-highlighted type="grouping" [title]="title" [description]="description">
+      <o-access #children title="Acceso" icon="bx bxs-info-circle" route="/home" size="sm"></o-access>
+    </o-highlighted>
+  </div>
+</div>
+`,F=`
+<o-highlighted type="lateral" [title]="title" [description]="shortDescription">
+  <o-button #children link="#" size="lg" [isExpandable]="true">Bot\xF3n</o-button>
+</o-highlighted>
+
+<o-highlighted type="lateral" [title]="title" [description]="shortDescription">
+  <o-button #children size="lg" type="secondary" link="#" download="">
+    <span class="material-symbols-rounded o-icon" aria-hidden="true">file_download</span>
+    Descargar
+  </o-button>
+</o-highlighted>
+
+<o-highlighted type="lateral" [title]="title" [description]="shortDescription">
+  <a #children class="external" href="#" target="_blank">Enlace externo</a>
+</o-highlighted>
+
+<o-highlighted type="lateral" [title]="title" [description]="shortDescription">
+  <o-access #children title="Acceso" icon="bx bxs-info-circle" route="/home" size="sm"></o-access>
+</o-highlighted>
+`;var Y=(()=>{let e=class e{constructor(){this.navigation=p}};e.\u0275fac=function(t){return new(t||e)},e.\u0275cmp=s({type:e,selectors:[["app-highlighted"]],decls:4,vars:1,consts:[[1,"section"],[3,"routes"],[1,"content"]],template:function(t,g){t&1&&(o(0,"section",0),a(1,"app-tabs-link",1),o(2,"div",2),a(3,"router-outlet"),c()()),t&2&&(n(),l("routes",g.navigation))},dependencies:[r,d]});let i=e;return i})();export{u as a,m as b,b as c,I as d,E as e,H as f,x as g,D as h,f as i,T as j,_ as k,G as l,v as m,A as n,C as o,y as p,M as q,S as r,N as s,L as t,O as u,z as v,B as w,k as x,R as y,w as z,V as A,P as B,U as C,F as D,Y as E};

@@ -1,0 +1,1 @@
+import{Pa as r,U as i,q as n}from"./chunk-LDCFWZ36.js";var a=(()=>{let e=class e{};e.\u0275fac=function(o){return new(o||e)},e.\u0275cmp=n({type:e,selectors:[["app-dropdown"]],decls:1,vars:0,template:function(o,s){o&1&&i(0,"router-outlet")},dependencies:[r]});let t=e;return t})();export{a};

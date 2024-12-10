@@ -1,0 +1,45 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "paths": {
+      // "ngx-obelisco": ["./dist/ngx-obelisco"]
+      "obelisco-angular-lib": ["projects/obelisco-angular-lib/index.ts"],
+      "obelisco-angular-lib/*": ["projects/obelisco-angular-lib/*"],
+      "include": [
+        // "projects/obelisco-angular/core/*.ts",
+        // "projects/obelisco-angular/access/*.ts",
+        "projects/obelisco-angular-lib/*.ts" 
+      ],
+      "exclude": [
+        "node_modules",
+        "dist" 
+      ]
+    },
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "declaration": false,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "useDefineForClassFields": false,
+    "lib": ["ES2022", "dom"]
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}

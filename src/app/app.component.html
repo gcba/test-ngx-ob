@@ -1,0 +1,197 @@
+<!-- <o-navbar
+  logoRoute="/"
+  [routes]="routes"
+  [searchbarItems]="searchItemsList"
+></o-navbar> -->
+<header class="o-header navbar" role="banner">
+  <a href="#main" class="skip-to-main-content-link">
+    Saltar al contenido principal
+  </a>
+  <div class="container header-container">
+    <a href="https://gcba.github.io/" class="navbar-brand">
+      <img
+        class="d-none d-xl-block"
+        src="https://gcba.github.io/Obelisco-V2/images/logo_obelisco.svg"
+        alt="Obelisco"
+      />
+      <img
+        class="d-xl-none"
+        src="https://gcba.github.io/Obelisco-V2/images/logo_obelisco_mobile.svg"
+        alt="Obelisco"
+      />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarHomeObelisco"
+      aria-controls="navbarHomeObelisco"
+      aria-expanded="false"
+      aria-label="Menú"
+    ></button>
+    <div class="collapse navbar-collapse" id="navbarHomeObelisco">
+      <div class="navbar-content">
+        <div class="navbar-sections">
+          <nav>
+            <p class="navbar-sections-title">Secciones </p>
+            <ul class="nav nav-pills nav-sections">
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-link-lg"
+                  href="https://gcba.github.io/Obelisco-V2/getting-started"
+                  ><span>Empezar con Obelisco</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-link-lg"
+                  href="https://gcba.github.io/Obelisco-V2/components"
+                  ><span>Librería</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-link-lg"
+                  href="https://gcba.github.io/obelisco-demo/"
+                  ><span>Plantillas</span></a
+                >
+              </li>
+              <li class="dropdown">
+                <button
+                  type="button"
+                  class="btn btn-dropdown btn-lg"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span class="btn-dropdown-text ellipsis-1">Versiones</span>
+                  <span
+                    class="material-symbols-rounded btn-dropdown-icon"
+                    aria-label="hidden"
+                  >
+                    expand_more
+                  </span>
+                </button>
+                <div class="dropdown-menu">
+                  <a
+                    class="dropdown-item"
+                    href="https://gcba.github.io/Obelisco-V2/documentation"
+                  >
+                    <span class="item-text">Obelisco v.2</span>
+                  </a>
+                  <a
+                    class="dropdown-item"
+                    href="https://gcba.github.io/obelisco-v1"
+                  >
+                    <span class="item-text"
+                      >Obelisco v.1
+                      <span class="fst-italic">(deprecado)</span></span
+                    >
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-backdrop"></div>
+</header>
+
+<section class="p-2 px-4 bg-dark" *ngIf="showSection">
+  <nav aria-label="Navegación horizontal de librería obelisco-angular" class="custom-nav-sections" style="width: fit-content; margin-left: auto;">
+    <ul class="nav flex-row nav-pills justify-content-center">
+      <li class="nav-item">
+        <a
+          class="btn btn-outline-light"
+          routerLink="/"
+          ><span>obelisco-angular</span></a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="btn btn-outline-light"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLink="/get-started"
+          ><span>Introducción</span></a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="btn btn-outline-light"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: false }"
+          routerLink="/components"
+          ><span>Componentes</span></a
+        >
+      </li>
+    </ul>
+  </nav>
+</section>
+
+<router-outlet />
+
+<h2 class="sr-only">Navegación de pie de página</h2>
+<footer class="main-footer">
+  <div class="container">
+    <section class="footer-legal-section">
+      <h3 class="sr-only">Información gubernamental</h3>
+      <div class="row align-items-center">
+        <div class="col-12 col-md-5 col-xl-4 footer-content-img">
+          <img
+            class="d-md-none"
+            src="https://gcba.github.io/Obelisco-V2/images/logo-footer-mobile.svg"
+            alt="Logo de Ciudad de Buenos Aires"
+            height="48"
+          /><img
+            class="d-none d-md-inline"
+            src="https://gcba.github.io/Obelisco-V2/images/logo-footer.svg"
+            alt="Logo de Ciudad de Buenos Aires"
+            height="40"
+          /><img
+            class="img-vamos-ba"
+            src="https://gcba.github.io/Obelisco-V2/images/logo-footer-ba.svg"
+            alt="Logo de Vamos Buenos Aires"
+          />
+        </div>
+        <div class="col-12">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="https://boletinoficial.buenosaires.gob.ar"
+                >Boletín oficial</a
+              >
+            </li>
+            <li class="list-inline-item">
+              <a href="https://buenosaires.gob.ar/inicio/terminos-y-condiciones"
+                >Términos y condiciones</a
+              >
+            </li>
+            <li class="list-inline-item">
+              <a href="https://buenosaires.gob.ar/inicio/privacidad"
+                >Política de privacidad</a
+              >
+            </li>
+            <li class="list-inline-item">
+              <a
+                href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales"
+                >Oficios judiciales</a
+              >
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.buenosaires.gob.ar/gobierno/transparencia"
+                >Transparencia</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="footer-license-text">
+        Los contenidos de buenosaires.gob.ar están licenciados bajo Creative
+        Commons Reconocimiento 2.5 Argentina License.
+      </div>
+    </section>
+  </div>
+</footer>
