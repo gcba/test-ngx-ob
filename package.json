@@ -67,8 +67,7 @@
           "pkgRoot": "dist/test-ngx-ob"
         }
       ],
-      "@semantic-release/github",
-      "@semantic-release/git"
+      "@semantic-release/github"
     ]
   }
 }
