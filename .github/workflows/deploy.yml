@@ -23,7 +23,7 @@ jobs:
         run: npm ci
 
       - name: Build Angular application
-        run: npm run build:test-ngx-ob-front -- --base-href "/test-ngx-ob-front/" --verbose
+        run: npm run build:test-ngx-ob-front -- --base-href "/test-ngx-ob-front/"
 
       - name: Deploy to gh-pages 🚀
         uses: peaceiris/actions-gh-pages@v3
