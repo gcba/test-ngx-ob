@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/gcba/test-ngx-ob/compare/v1.1.2...v1.1.3) (2024-12-12)
+
+
+### Bug Fixes
+
+* workflow y angular json para deploy ([4d21114](https://github.com/gcba/test-ngx-ob/commit/4d21114406e7f37720032c863a3bd969ce684b03))
+
 ## [1.1.2](https://github.com/gcba/test-ngx-ob/compare/v1.1.1...v1.1.2) (2024-12-12)
 
 
