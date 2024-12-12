@@ -23,7 +23,7 @@ jobs:
         run: npm ci
 
       - name: Build Angular application
-        run: npm run build:test-ngx-ob-front
+        run: npm run build:test-ngx-ob-front -- --base-href "/test-ngx-ob/"
 
       - name: Deploy to gh-pages 🚀
         uses: peaceiris/actions-gh-pages@v3
@@ -31,5 +31,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./dist/test-ngx-ob-front
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          enable_jekyll: false
