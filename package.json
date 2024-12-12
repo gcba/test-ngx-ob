@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:test-ngx-ob-front": "ng build test-ngx-ob-front",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "semantic-release": "semantic-release"
@@ -21,7 +22,6 @@
     "@angular/router": "^17.1.0",
     "@gcba/obelisco-v2": "^1.5.1",
     "@ngneat/helipopper": "^8.0.3",
-    "angular-cli-ghpages": "^2.0.3",
     "ngx-highlight-js": "^16.1.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
@@ -38,6 +38,7 @@
     "@semantic-release/npm": "^12.0.1",
     "@semantic-release/release-notes-generator": "^14.0.1",
     "@types/jasmine": "~5.1.0",
+    "angular-cli-ghpages": "^2.0.3",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
