@@ -102,7 +102,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "/test-ngx-ob-front/",
+            "baseHref": "/test-ngx-ob/",
             "outputPath": "dist/test-ngx-ob-front"
           }
         }
